@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Md. Shahariar Nafiz Salman | Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Md. Shahariar Nafiz Salman</h1>
+        <p>Undergraduate CSE Student at BRAC University</p>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <button id="darkModeToggle">🌙 Dark Mode</button>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <img src="profile.jpg" alt="Profile Picture" class="profile-pic">
+        <p>Assalamu Alaikum</p>
+        <p>I am Md. Shahariar Nafiz Salman, a CSE undergraduate student at BRAC University, passionate about problem-solving, innovation, and technology. I love turning ideas into reality through coding and creative solutions. Always eager to learn and grow, I strive to push boundaries and make an impact. </p>
+        <p>Pray for me. Thank you.</p>
+    </section>
+
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Project 1: Portfolio Website</h3>
+            <p>A fully responsive personal portfolio website.</p>
+        </div>
+        <div class="project">
+            <h3>Project 2: Java Calculator</h3>
+            <p>A simple calculator built with Java Swing.</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: your.email@example.com</p>
+        <p>LinkedIn: <a href="#">linkedin.com/in/yourprofile</a></p>
+        <p>GitHub: <a href="#">github.com/yourgithub</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Md. Shahariar Nafiz Salman. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const darkModeToggle = document.getElementById("darkModeToggle");
+            const body = document.body;
+            
+            // Check for saved user preference in localStorage
+            if (localStorage.getItem("darkMode") === "enabled") {
+                body.classList.add("dark-mode");
+            }
+            
+            darkModeToggle.addEventListener("click", function () {
+                body.classList.toggle("dark-mode");
+    
+                if (body.classList.contains("dark-mode")) {
+                    localStorage.setItem("darkMode", "enabled");
+                } else {
+                    localStorage.setItem("darkMode", "disabled");
+                }
+            });
+        });
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,138 @@
+/* General Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+/* Header */
+header {
+    background: #1e1e1e;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+
+/* Dark Mode Toggle Button */
+#darkModeToggle {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: #ffcc00;
+    border: none;
+    padding: 10px 15px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s, transform 0.3s;
+}
+
+#darkModeToggle:hover {
+    background: #e6b800;
+    transform: scale(1.1);
+}
+
+/* Navigation */
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffcc00;
+}
+
+/* Sections */
+section {
+    padding: 30px;
+    text-align: center;
+    transition: transform 0.5s ease-in-out, opacity 0.5s;
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+/* Section Animation when visible */
+.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Profile Picture */
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 15px auto;
+    display: block;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.profile-pic:hover {
+    transform: scale(1.1);
+}
+
+/* Projects */
+.project {
+    background: white;
+    margin: 15px auto;
+    padding: 15px;
+    border-radius: 8px;
+    width: 80%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s;
+}
+
+.project:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
+footer {
+    background: #1e1e1e;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+/* Dark Mode */
+.dark-mode {
+    background-color: #121212;
+    color: #f4f4f4;
+}
+
+.dark-mode header,
+.dark-mode footer {
+    background: #1a1a1a;
+}
+
+.dark-mode .project {
+    background: #222;
+    color: #f4f4f4;
+}
+
+.dark-mode a {
+    color: #ffcc00;
+}
+
+.dark-mode a:hover {
+    color: #e6b800;
+}
